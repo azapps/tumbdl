@@ -47,9 +47,6 @@ if [ $# -ne 2 ]; then
   exit
 fi
 
-# sanitize input url
-url=$(echo "$url" | sed 's/http[s]*:\/\///g;s/\/$//g')
-
 # create target dir
 mkdir "$targetDir"
 touch "$targetDir/articles.txt"
